@@ -32,7 +32,9 @@ jobs:
 
       # Set up Python environment
       - name: Set up Python ${{ matrix.python-version }}
-        run: actions/setup-python@v2
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
 
       # Install dependencies
       - name: Install dependencies
