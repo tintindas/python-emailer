@@ -32,7 +32,7 @@ html_message = f"""\
     </div>
 
     <div>
-        <p>I put the smart people's words before my own because everytime I think about you every neuron in my brain goes in to overdrive and short-circuits. And, honestly what is there left to say except,</p>
+        <p>I put smart people's words before my own because everytime I think about you every neuron in my brain short-circuits.</p>
         <p style="text-align: center"> ❤️ I love you ❤️ </p>
     <div>
   </body>
