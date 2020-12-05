@@ -7,20 +7,11 @@ import requests
 # Fetch dog image
 dog_url = requests.get('https://dog.ceo/api/breeds/image/random').json()['message']
 
-# Fetch quote
-quote = requests.get('http://tintin-quotes-api.herokuapp.com/quotes/random').json()
-quote_text = quote['text']
-quote_author = quote['author']
 
 # Message to send if HTML is disabled
 message_body = f"""\
     🐶 Woof 🐶
     {dog_url}
-
-    {quote_text}
-    - {quote_author}
-
-    I put smart people's words before my own because everytime I think about you every neuron in my brain short-circuits.
 
     ❤️ I love you ❤️ 
     """
@@ -33,15 +24,7 @@ html_message = f"""\
     <p style="font-family: sans-serif; font-size: xx-large; margin-bottom: 30px; text-align: center;">🐶 Woof 🐶</p>
     <img src="{dog_url}" alt="cute dog" style="border-radius: 6px; width: 100%;" />
 
-    <div>
-      <p>
-        {quote_text}
-      </p>
-      <p style="text-align: right"><em>- {quote_author}</em></p>
-    </div>
-
-    <div>
-        <p>I put smart people's words before my own because everytime I think about you every neuron in my brain short-circuits.</p>
+    <div> 
         <p style="text-align: center"> ❤️ I love you ❤️ </p>
     <div>
   </body>
