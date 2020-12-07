@@ -3,8 +3,9 @@
 A small script to send dog pictures to myself every hour via email.
 
 ## E-Mail Sample
-
-![image](https://user-images.githubusercontent.com/47525983/101314776-44ba6380-387f-11eb-8913-a22669a7f497.png)
+<p align='center'>
+    <img alt='dog sample email' src="https://user-images.githubusercontent.com/47525983/101314776-44ba6380-387f-11eb-8913-a22669a7f497.png">
+</p>
 
 ## Automated with Github Actions
 
@@ -61,10 +62,10 @@ You may have to set up 2FA if you have not already (Two factor authentication is
 
  1. Edit email list
  
- Edit the line below. Reset the array with your email addresses.
+    Edit the line below. Reset the array with your email addresses.
  
- [`msg['To'] = ['upamanyudas16@gmail.com', to_email]`](https://github.com/tintindas/python-emailer/blob/574924b646a8fdcbe13043bed32374f4136a9be4/emailer.py#L44)
+       [`msg['To'] = ['upamanyudas16@gmail.com', to_email]`](https://github.com/tintindas/python-emailer/blob/574924b646a8fdcbe13043bed32374f4136a9be4/emailer.py#L44)
  
  1. Run script
  
- `$ python emailer.py`
+       `$ python emailer.py`
