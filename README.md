@@ -7,6 +7,10 @@ A small script to send dog pictures to myself every hour via email.
     <img alt='dog sample email' src="https://user-images.githubusercontent.com/47525983/101314776-44ba6380-387f-11eb-8913-a22669a7f497.png">
 </p>
 
+## How to get a dog in your e-mail
+
+Raise an issue with your email-id and the frequency with which you want to receive cute dog pics and I'll add you to the mailing list.
+
 ## Automated with Github Actions
 
 The email.yml file builds a python 3.8 environment and runs the emailer.py script to send out dog pictures every hour.
@@ -20,7 +24,7 @@ Dog pictures are fetched from the following API.
 
 ## Planned Improvements
 
-- [ ] Open up email list to public
+- [x] Open up email list to public
 - [ ] Create workflow to add email from pull request to email list.
 
 ## Contributing
@@ -31,9 +35,16 @@ If you can help with any of the tasks in the Planned Improvements section (they 
 
 ### Google Set up
 
-Go to the following link to set up an app password for your google account.
+1. Go to the following link to set up an app password for your google account.
 
-[Link](https://myaccount.google.com/apppasswords)
+      [Link](https://myaccount.google.com/apppasswords)
+
+1. Set email address and password generated for third-party app as environment variables.
+    ```
+    $ export EMAIL_USER=<Your email id>
+    $ export EMAIL_PASSWORD=<Generated password>
+    ```
+    
 
 You may have to set up 2FA if you have not already (Two factor authentication is highly recommended. Not everyone on the Internet wants to send you dog pictures every hour, some people want your bank details).
 
