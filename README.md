@@ -1,5 +1,7 @@
 # python-emailer
 
+![Email every hour](https://github.com/tintindas/python-emailer/workflows/Email%20every%20hour/badge.svg)
+
 A small script to send dog pictures to myself every hour via email.
 
 ## E-Mail Sample
